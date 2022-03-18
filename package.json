@@ -11,9 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/from-zero-to-fullstack/password-strength-validator.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["javacript", "password-strength-meter"],
+  "author": "Pedro Soares",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/from-zero-to-fullstack/password-strength-validator/issues"
   },
