@@ -8,6 +8,12 @@ This repository aims to create a password strength validator that:
 - Shows how secure is the typed password
 - Generate a new strong password
 
+![menu](./images/menu.png)
+
+![generated password](./images/generated-password.png)
+
+![password strength](./images/password-strength.png)
+
 🙈 No data is collected!
 
 # Setup
