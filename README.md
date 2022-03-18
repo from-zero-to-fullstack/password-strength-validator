@@ -32,6 +32,18 @@ Go to the project directory
   cd password-strength-validator
 ```
 
+# How to execute
+
+1. Open the terminal
+2. Execute `cd` to the project root directory
+3. Execute the following command
+```
+  node src/Script.js
+```
+4. Follow the instructions
+
+> HINT 💡: You can run the application once to generate a password and again to validate the generated password strenth
+
 # License
 
 MIT
