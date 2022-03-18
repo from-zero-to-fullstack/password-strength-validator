@@ -1,8 +1,12 @@
 // imports
-const readline = require('readline').createInterface({
+import clipboard from 'clipboardy';
+import rl from 'readline';
+
+const readline = rl.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+
 
 // Labels
 const shortPasswordLabel = 'Password too short';
@@ -15,7 +19,9 @@ const repeatedCharactersLabel = 'Repeated characters';
 const doesNotHaveLabel = 'Does not have';
 const mustHaveMoreLabel = 'Could have more';
 
-readline.question('Choose an option:\n  [0] Validate password strength\n  [1] Generate password\n> ', function (inputtedOption) {
+console.clear();
+
+readline.question('\nChoose an option:\n  [0] Validate password strength\n  [1] Generate password\n> ', function (inputtedOption) {
 
     if (inputtedOption == '0') {
         readline.question('\nType a password and then click Enter:\n> ', function (inputtedPassword) {
@@ -34,7 +40,7 @@ readline.question('Choose an option:\n  [0] Validate password strength\n  [1] Ge
                 console.log(`- ${weakness.message}`);
             });
 
-            console.log(`\nPassword strength: ${strength} / 100`);
+            console.log(`\nPassword strength: ${strength} / 100\n`);
 
             readline.close();
         });
@@ -42,11 +48,12 @@ readline.question('Choose an option:\n  [0] Validate password strength\n  [1] Ge
     else if (inputtedOption == '1') {
         const generatedPassword = generatePassword();
         console.log(`\nGenerated password: ${generatedPassword}`);
+        console.log(`The password was copied to clipboard!\n`);
 
         readline.close();
     }
     else {
-        console.error('Invalid option!');
+        console.error('\nInvalid option!\n');
 
         readline.close();
     }
@@ -188,6 +195,9 @@ function generatePassword() {
             generatedPassword += specialCharacter;
         }
     }
+
+    // copy password to clipboard
+    clipboard.writeSync(generatedPassword);
 
     return generatedPassword;
 }
