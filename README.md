@@ -61,12 +61,13 @@ Go to the project directory
 # How to execute
 
 1. Open the terminal
-2. Execute `cd` to the project root directory
-3. Execute the following command
+1. Execute `cd` to the project root directory `password-strength-validator`
+1. Run the command `npm i`
+1. Execute the following command
 ```
   node src/Script.js
 ```
-4. Follow the instructions
+1. Follow the instructions
 
 > HINT 💡: You can run the application once to generate a password and again to validate the generated password strenth
 
