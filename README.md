@@ -16,6 +16,26 @@ This repository aims to create a password strength validator that:
 
 🙈 No data is collected!
 
+# Technologies
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node](https://nodejs.org/en/docs/)
+
+# External packages
+
+### `import rl from 'readline';`
+
+Synchronous Readline for interactively running to have a conversation with the user via terminal.
+
+[Documentation 📄](https://nodejs.org/api/readline.html)
+
+### `import clipboard from 'clipboardy';`
+
+Package used to copy some text to the clipboard. As simple as that.
+
+[Documentation 📄](https://github.com/sindresorhus/clipboardy)
+
 # Setup
 
 ## Clone repository
