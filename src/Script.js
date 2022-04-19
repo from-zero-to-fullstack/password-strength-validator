@@ -1,4 +1,3 @@
-// imports
 import clipboard from 'clipboardy';
 import rl from 'readline';
 
@@ -8,7 +7,6 @@ const readline = rl.createInterface({
 });
 
 
-// Labels
 const shortPasswordLabel = 'Password too short';
 const mustHaveMoreCharactersLabel = 'The password could have more characters';
 const lowerCaseCharactersLabel = 'lowercase letters';
