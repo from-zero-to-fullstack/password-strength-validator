@@ -28,9 +28,13 @@ This repository aims to create a password strength validator that:
 
 Synchronous Readline for interactively running to have a conversation with the user via terminal.
 
+[Documentation 📄](https://nodejs.org/api/readline.html)
+
 ### `import clipboard from 'clipboardy';`
 
 Package used to copy some text to the clipboard. As simple as that.
+
+[Documentation 📄](https://github.com/sindresorhus/clipboardy)
 
 # Setup
 
